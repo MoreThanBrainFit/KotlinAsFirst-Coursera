@@ -50,22 +50,18 @@ class Tests {
     @Tag("Trivial")
     fun seconds() {
         assertEquals(30035, seconds(8, 20, 35))
-        assertEquals(86400, seconds(24, 0, 0))
-        assertEquals(13, seconds(0, 0, 13))
     }
 
     @Test
     @Tag("Trivial")
     fun lengthInMeters() {
         assertEquals(18.98, lengthInMeters(8, 2, 11), 1e-2)
-        assertEquals(2.13, lengthInMeters(1, 0, 0), 1e-2)
     }
 
     @Test
     @Tag("Trivial")
     fun angleInRadian() {
         assertEquals(0.63256, angleInRadian(36, 14, 35), 1e-5)
-        assertEquals(PI / 2.0, angleInRadian(90, 0, 0), 1e-5)
     }
 
     @Test
